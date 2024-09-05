@@ -23,29 +23,36 @@ Finnally in the same function change maxTime to increase how long it will count 
 
 * Windows 10
 * Developed it in Python 3.9.13
-* Python reqs are in requirement.txt
+* Python reqs are in requirements.txt
 * You need to have the video or discord call on your screen for the app to take screenshots of
 
 ### Installing
 
-* Should be good to just download the zip
-* Install reqruiemetns, then run main()
+* Should be good to just download the zip. Open up a terminal and navigate to the folder's location after you unzip it or clone it.
+* Install requirements, probably best in a virtual enviroment
+	```
+	python3 -m venv env
+ 	pip install -r requirements.txt
+	```
 
 ### Executing program
 
-* Install Reqs, probably in a virtual enviroment
 * Run main()
 	```
 	python .\main.py
 	```
 	This will bring up the main menu GUI:
+![mainMenu](https://github.com/user-attachments/assets/55ede94b-6655-42ed-8b7c-58a40b033011)
 * Once here there are 5 buttons
 	* Select Theme: Which lets you change how the GUI looks
 	* Select File: Which in theory will let you choose an mp4 to track
 	* Select Screen: This runs the code for selecting a screen to track directly and lets you see how it will work
 	* Ext: Closes app obv
 	* Run: This runs the actual program
-* After clicking "Run" it will open a new window for you to choose from. Choose the window that has the video or discord itself you want to track
+* After clicking "Run" it will open a new window for you to choose from. Choose the window that has the video or discord itself you want to track.
+  
+	![selectWindow](https://github.com/user-attachments/assets/a912decf-3016-4c3b-a634-6109c1572431)
+
 * That window will be brought to the front, a screenshot taken, and borders auto detected for your speakers. Take a look and decide if they fully cover all the speakers.
 	* Close this screen shot by pressing 'q' or any other key when you are ready.
 * If those borders do not work click no and a new screenshot will be taken and allow you to manually draw the borders.
@@ -53,6 +60,7 @@ Finnally in the same function change maxTime to increase how long it will count 
 * After you draw the borders it will ask you if you want to start. Make sure the window you selected is still front and center and press yes.
 * After it runs its course the results will be printed to the big box in the GUI main screen
 	* The data is not saved anywhere, just printed, so save it someone if you want to keep it before closing the app.
+	![trackComplete](https://github.com/user-attachments/assets/b8ee748e-e754-4c75-9866-bf6ac38a055a)
 
 ## Future Enhancement Ideas
 
